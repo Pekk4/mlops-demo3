@@ -10,11 +10,11 @@ spec:
   arguments:
     parameters:
       - name: training_image
-        value: ghcr.io/pekk4/mlops-demo2:c8f74215c007f0cd2e71250f7cf53391ee58230f
+        value: ghcr.io/pekk4/mlops-demo3:c8f74215c007f0cd2e71250f7cf53391ee58230f
       - name: update_manifests_image
         value: ghcr.io/pekk4/argo-git-tools:latest
       - name: repo_url
-        value: https://github.com/pekk4/mlops-demo2.git
+        value: https://github.com/pekk4/mlops-demo3.git
       - name: tracking_uri
         value: http://mlflow.mlflow.svc.cluster.local
       - name: s3_endpoint
