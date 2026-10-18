@@ -12,6 +12,16 @@ spec:
     - name: training-webhook
       eventSourceName: training-webhook
       eventName: training
+      filters:
+        data:
+          - path: body.commonLabels.model
+            type: string
+            value:
+              - "^wine$"
+          - path: body.commonLabels.trigger
+            type: string
+            value:
+              - "^retraining$"
 
   triggers:
     - template:
