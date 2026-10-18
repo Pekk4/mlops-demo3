@@ -3,14 +3,14 @@ kind: Workflow
 metadata:
   generateName: wine-train-
   namespace: ml-workflows
-  name: wine-train-c8f74215c007f0cd2e71250f7cf53391ee58230f
+  name: wine-train-cf20b7c368f104e196e778467e86ff1d4dc0b86a
 spec:
   workflowTemplateRef:
     name: train-template
   arguments:
     parameters:
       - name: training_image
-        value: ghcr.io/pekk4/mlops-demo3:c8f74215c007f0cd2e71250f7cf53391ee58230f
+        value: ghcr.io/pekk4/mlops-demo3:cf20b7c368f104e196e778467e86ff1d4dc0b86a
       - name: update_manifests_image
         value: ghcr.io/pekk4/argo-git-tools:latest
       - name: repo_url
