@@ -20,7 +20,7 @@ spec:
       protocolVersion: v2
       storageUri: "s3://mlflow/0/models/m-2f86637a2fb44905bf0f62f79cb5e33a/artifacts"
       #image: pipeline-registry:5000/seldonio/mlserver:v1.5.0-local
-      image: perkele-registry:5000/seldonio/mlserver:v1.5.0-local
+      image: saatana-registry:5000/seldonio/mlserver:v1.5.0-local
       imagePullPolicy: IfNotPresent
       #ports:
       #  - containerPort: 8080
