@@ -16,7 +16,7 @@ spec:
     serviceAccountName: kserve-sa
     model:
       modelFormat:
-        name: sklearn
+        name: mlserver
       protocolVersion: v2
       storageUri: "s3://mlflow/0/models/m-deb1c06292e94b09bb0151319878e5aa/artifacts"
       #image: pipeline-registry:5000/seldonio/mlserver:v1.5.0-local
